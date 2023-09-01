@@ -1,0 +1,65 @@
+#error_msg {
+  margin-bottom: 0;
+  padding: 0;
+  background: rgb(230, 180, 180);
+  color: rgb(175, 60, 60);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.5rem;
+}
+
+.contact {
+  background: var(--section-background-color);
+  padding-bottom: 2rem;
+}
+
+.contact_container {
+  row-gap: 3rem;
+}
+
+.contact_information {
+  display: flex;
+  margin-bottom: var(--mb-2);
+}
+
+.contact_icon {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-right: var(--mb-0-75);
+}
+
+.contact_title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.contact_subtitle {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.contact_content {
+  background: var(--input-color);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.contact_form-icon {
+  font-size: 1.2rem;
+  color: var(--first-color);
+}
+
+.contact_input {
+  width: 100%;
+  background: var(--input-color);
+  color: var(--text-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  border: none;
+  outline: none;
+  padding: 0.25rme 0.5rem 0.5rem 0;
+}
+
+.contact_button:hover .button_icon {
+  color: #fff;
+}
