@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <Header />
-      <div className="main">
+      <div className="app_main">
         <Hero />
         <AboutMe />
         <Skills />

@@ -1,27 +1,56 @@
 .about {
   background: #fff;
-  padding-bottom: 0;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_container {
+  width: 100%;
+  max-width: 1024px;
+}
+
+.about_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .about_img {
   width: 200px;
+  height: 200px;
   border-radius: 0.5rem;
-  justify-self: center;
-  align-self: center;
+  overflow: hidden;
+  margin-top: 2rem;
+}
+
+.about_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .about_description {
   text-align: center;
-  margin-bottom: var(--mb-2-5);
 }
 
 .about_info {
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: var(--mb-2-5);
-  transform: translateY(50px);
-  opacity: 0;
+  justify-content: space-between;
+  /* transform: translateY(50px); */
+  /* opacity: 0; */
   transition: 1s;
+}
+
+.about_info_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .about_info[data-scroll="in"] {
@@ -30,7 +59,7 @@
   transition-delay: 0.5s;
 }
 
-.about_info-title {
+.about_info_number {
   font-size: var(--h2-font-size);
   font-weight: var(--font-semi-bold);
   color: var(--title-color);
@@ -61,4 +90,10 @@
 .button-icon {
   margin-left: var(--mb-0-5);
   font-size: var(--mb-1-5);
+}
+
+@media screen and (max-width: 767px) {
+  .about {
+    padding: 2rem 1rem;
+  }
 }

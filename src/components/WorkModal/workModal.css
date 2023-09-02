@@ -1,0 +1,59 @@
+.works_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: var(--z-modal);
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.works_modal-content {
+  position: relative;
+  background: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.works_modal-works {
+  row-gap: 1rem;
+}
+
+.works_modal-work {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.works_modal-title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
+
+.works_modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: var(--first-color);
+  cursor: pointer;
+}
+
+.works_modal-icon {
+  color: var(--first-color-alt);
+  margin-right: var(--mb-0-25);
+}
+
+.active_modal {
+  opacity: 1;
+  visibility: visible;
+}
