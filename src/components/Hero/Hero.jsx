@@ -30,7 +30,7 @@ const Hero = () => {
             </div>
             <div className="hero_data">
               <h1 className="hero_title">
-                Hi, It<span className="title_color">'</span>s Sonu
+                Hi, It<span className="title_color">'</span>s Riyaz
               </h1>
               <h3 className="hero_subtitle">
                 I am a
@@ -48,23 +48,33 @@ const Hero = () => {
                   }}
                 />
               </h3>
-              <a href="#contact" className="button button-flex hero_button">
-                Get Connected
-                <i className="fas fa-phone nav_icon button_icon"></i>
-              </a>
+              <div className="hero_buttons">
+                <a href="#contact" className="button contact">
+                  Contact Me
+                  <i class="fas fa-address-card" />
+                </a>
+                <a href="#contact" className="button cv">
+                  Download CV
+                  <i class="fas fa-file-download" />
+                </a>
+              </div>
             </div>
 
             <div className="hero_img">
-              <img src="/assets/img.jpg" alt="profile" />
+              <img src="/assets/img2.png" alt="profile" />
             </div>
           </div>
-          {/* <div className="hero_scroll">
-            <a href="#about" className="hero_scroll-button button-flex">
-              <i className="fas fa-mouse hero_scroll-mouse"></i>
-              <span className="hero_scroll-name">Scroll Down</span>
-              <i className="fas fa-arrow-down hero_scroll-arrow"></i>
-            </a>
-          </div> */}
+        </div>
+        <div className="hero_tech_list">
+          <marquee
+            behavior="scroll"
+            direction="left"
+            width="100%"
+            scrollamount="20"
+          >
+            ReactJS <span>|</span> Redux <span>|</span> NextJS <span>|</span>
+            JavaScript <span>|</span> HTML <span>|</span> CSS <span>|</span>
+          </marquee>
         </div>
       </section>
     </>

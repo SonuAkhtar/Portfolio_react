@@ -17,7 +17,9 @@ const MenuDesk = ({ show, setShow }) => {
 
   const handleMenuClick = (val) => {
     setMenuItem(val);
-    setShow(false);
+    setTimeout(() => {
+      setShow(false);
+    }, 1000);
   };
 
   return (

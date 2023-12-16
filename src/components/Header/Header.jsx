@@ -30,11 +30,10 @@ const Header = () => {
             <i className={`fas fa-times ${menuClick && "show"}`} />
           </div>
 
-          <MenuDesk show={menuClick} setShow={setMenuClick} />
-
           <MenuMobile expand={menuClick} setExpand={setMenuClick} />
         </nav>
       </header>
+      <MenuDesk show={menuClick} setShow={setMenuClick} />
     </>
   );
 };
