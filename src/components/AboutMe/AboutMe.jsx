@@ -21,29 +21,23 @@ const AboutMe = () => {
 
             <div className="about_info">
               <div className="about_info_card">
-                <span className="about_info_number">3+</span>
+                <span className="about_info_number">6+</span>
                 <span className="about_info-name">Years experience</span>
               </div>
               <div className="about_info_card">
-                <span className="about_info_number">8+</span>
+                <span className="about_info_number">20+</span>
                 <span className="about_info-name">Completed projects</span>
               </div>
               <div className="about_info_card">
-                <span className="about_info_number">3+</span>
+                <span className="about_info_number">4</span>
                 <span className="about_info-name">Companies worked with</span>
               </div>
 
               <div className="about_info_card">
-                <span className="about_info_number">3+</span>
-                <span className="about_info-name">Companies worked with</span>
+                <span className="about_info_number">5+</span>
+                <span className="about_info-name">Languages Known</span>
               </div>
             </div>
-            {/* <div className="about_buttons">
-                <a href="#" className="button button-flex">
-                  Download CV{" "}
-                  <i className="fas fa-file-download button-icon"></i>
-                </a>
-              </div> */}
           </div>
         </div>
       </section>
