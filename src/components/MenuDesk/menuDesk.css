@@ -1,8 +1,8 @@
 .menuDesk_container {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: -1rem;
+  width: 100vw;
   height: 100vh;
   background-color: transparent;
   transition: all 3s ease-in-out;
@@ -129,4 +129,11 @@
 
 .menuDesk_stripe.six {
   transform: translate(0, -50%) rotate(45deg);
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 600px) {
+  .menuDesk_container {
+    display: none;
+  }
 }
