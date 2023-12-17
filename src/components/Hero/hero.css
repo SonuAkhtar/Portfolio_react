@@ -1,5 +1,6 @@
 .hero_section {
   position: relative;
+  margin-top: 6vh;
   height: 70vh;
   background: var(--section-background-color);
   display: flex;
@@ -25,46 +26,42 @@
 }
 
 .hero_social a {
-  background-color: white;
+  background-color: var(--section-background-color);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 40px;
   width: 40px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--section-text-color);
   border-radius: 50%;
   font-size: 1rem;
-  color: #000;
   transition: all 0.3s ease-in-out;
 }
 
 .hero_social a:nth-child(1) {
   color: #4267b2;
 }
+.hero_social a:nth-child(1):hover {
+  background-color: #4267b2;
+}
 
 .hero_social a:nth-child(2) {
   color: #0e76a8;
+}
+.hero_social a:nth-child(2):hover {
+  background-color: #0e76a8;
 }
 
 .hero_social a:nth-child(3) {
   color: #1da1f2;
 }
+.hero_social a:nth-child(3):hover {
+  background-color: #1da1f2;
+}
 
 .hero_social a:hover {
   scale: 1.2;
-  color: white;
-}
-
-.hero_social a:nth-child(1):hover {
-  background-color: #4267b2;
-}
-
-.hero_social a:nth-child(2):hover {
-  background-color: #0e76a8;
-}
-
-.hero_social a:nth-child(3):hover {
-  background-color: #1da1f2;
+  color: var(--section-background-color);
 }
 
 .hero_title {
@@ -72,12 +69,12 @@
 }
 
 .hero_subtitle {
-  font-size: 1.5rem;
-  color: black;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
   display: flex;
   gap: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--section-text-color);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .hero_buttons {
@@ -94,9 +91,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #0c0910;
-  color: white;
-  border: 1px solid #0c0910;
+  border: 1px solid var(--section-text-color);
   padding: 0.75rem 1rem;
   border-radius: 1rem;
   font-weight: 500;
@@ -109,25 +104,29 @@
 }
 
 .hero_buttons .button.contact {
-  background-color: #0c0910;
-  color: white;
+  background: var(--section-even-background-color);
+  color: var(--section-even-text-color);
 }
 
 .hero_buttons .button.contact:hover {
-  background-color: white;
-  color: #0c0910;
+  background: var(--section-background-color);
+  color: var(--section-text-color);
   border-radius: 2rem;
 }
 
 .hero_buttons .button.cv {
-  background-color: white;
-  color: #0c0910;
+  background: var(--section-background-color);
+  color: var(--section-text-color);
 }
 
 .hero_buttons .button.cv:hover {
-  background-color: #0c0910;
-  color: white;
+  background: var(--section-even-background-color);
+  color: var(--section-even-text-color);
   border-radius: 2rem;
+}
+
+.hero_buttons .button img {
+  border: 1px solid var(--section-text-color);
 }
 
 .hero_img {

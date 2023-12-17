@@ -1,6 +1,9 @@
 import React from "react";
 import TypewriteComponent from "typewriter-effect";
 
+// imported Data
+import { socialIconsData } from "../../../appData";
+
 // imported CSS
 import "./hero.css";
 
@@ -16,16 +19,13 @@ const Hero = () => {
         <div className="container">
           <main className="hero_main">
             <div className="hero_social">
-              <a href="https://www.instagram.com/sonu_03.01/">
-                <i className="fab fa-facebook-f" />
-              </a>
-              <a href="https://www.linkedin.com/in/sonu-akhtar-03bb59129">
-                <i className="fab fa-linkedin-in" />
-              </a>
-              <a href="https://twitter.com/sonuakhtar5">
-                <i className="fab fa-twitter" />
-              </a>
+              {socialIconsData.map((item, i) => (
+                <a key={i} href={item.href}>
+                  <i className={item.class} />
+                </a>
+              ))}
             </div>
+
             <div className="hero_data">
               <h1 className="hero_title">
                 Hi, It<span className="title_color">'</span>s Riyaz
