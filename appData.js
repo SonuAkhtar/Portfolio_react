@@ -40,26 +40,49 @@ export const hobbiesData = [
 export const skillsData = [
   {
     id: 0,
+    icon: "fab fa-react",
     title: "Frontend Developer",
     subtitle: "More than 3 years",
     data: [
       {
         id: 0,
-        name: "HTML",
+        icon: "fab fa-react",
+        name: "ReactJS",
         number: "90%",
       },
       {
         id: 1,
+        icon: "fab fa-react",
+        name: "NextJS",
+        number: "90%",
+      },
+      {
+        id: 2,
+        icon: "fab fa-js",
+        name: "JavaScript",
+        number: "90%",
+      },
+      {
+        id: 3,
+        icon: "fab fa-html5",
+        name: "HTML",
+        number: "90%",
+      },
+      {
+        id: 4,
+        icon: "fab fa-css3-alt",
         name: "CSS",
         number: "85%",
       },
       {
-        id: 2,
-        name: "JavaScript",
+        id: 5,
+        icon: "fab fa-react",
+        name: "Tailwind",
         number: "80%",
       },
       {
-        id: 3,
+        id: 6,
+        icon: "fab fa-bootstrap",
         name: "BootStrap",
         number: "80%",
       },
@@ -68,6 +91,7 @@ export const skillsData = [
 
   {
     id: 1,
+    icon: "fab fa-node",
     title: "Backend Developer",
     subtitle: "More than 2 years",
     data: [
@@ -78,16 +102,21 @@ export const skillsData = [
       },
       {
         id: 1,
-        name: "Firebase",
+        name: "ExpressJS",
         number: "85%",
       },
       {
         id: 2,
+        name: "MongoDB",
+        number: "85%",
+      },
+      {
+        id: 3,
         name: "Python",
         number: "80%",
       },
       {
-        id: 3,
+        id: 4,
         name: "VBA",
         number: "80%",
       },
@@ -95,7 +124,8 @@ export const skillsData = [
   },
 
   {
-    id: 0,
+    id: 2,
+    icon: "fab fa-figma",
     title: "UI/UX Designer",
     subtitle: "More than 2 years",
     data: [
