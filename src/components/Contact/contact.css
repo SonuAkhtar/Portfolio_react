@@ -1,24 +1,5 @@
-.contact {
+section.contact {
   background: var(--section-background-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-}
-
-.contact_container {
-  width: 100%;
-  max-width: 1024px;
-}
-
-.contact_title {
-  font-size: var(--h3-font-size);
-  font-weight: var(--font-medium);
-}
-
-.contact_subtitle {
-  font-size: var(--small-font-size);
-  color: var(--text-color-light);
 }
 
 .contact_main {
@@ -36,12 +17,12 @@
 .contact_icon_title {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
-.contact_icon_title i {
-  font-size: 1.5rem;
-  color: var(--first-color);
+.contact_icon_title img {
+  height: 35px;
+  mix-blend-mode: multiply;
 }
 
 .contact_inputs {

@@ -8,15 +8,15 @@ const Skills = () => {
   return (
     <>
       <section className="skills" id="skills">
-        <div className="skills_container">
+        <div className="container">
           <h2 className="section_title">Skills</h2>
-          <span className="section_subtitle">My technical level</span>
+          <span className="section_subtitle">Technically</span>
 
-          <div className="skills_main">
+          <main className="skills_main">
             {skillsData.map((skill, index) => (
               <div key={skill.id} className="skills_content">
                 <div className="skills_header">
-                  <i className="fas fa-code skills_icon" />
+                  <i className={`skills_icon ${skill.icon}`} />
                   <div>
                     <h1 className="skills_title">{skill.title}</h1>
                     <span className="skills_subtitle">{skill.subtitle}</span>
@@ -51,7 +51,7 @@ const Skills = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </main>
         </div>
       </section>
     </>

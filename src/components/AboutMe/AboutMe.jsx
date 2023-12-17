@@ -1,15 +1,17 @@
 import React from "react";
+
+// imported CSS
 import "./aboutMe.css";
 
 const AboutMe = () => {
   return (
     <>
       <section className="about" id="about">
-        <div className="about_container">
+        <div className="container">
           <h2 className="section_title">About Me</h2>
-          <span className="about_subtitle">{`{professionally}`}</span>
+          <span className="section_subtitle">Professionally</span>
 
-          <div className="about_main">
+          <main className="about_main">
             <div className="about_img">
               <img src="/assets/about_pic.jpg" alt="about" />
             </div>
@@ -38,7 +40,7 @@ const AboutMe = () => {
                 <span className="about_info-name">Languages Known</span>
               </div>
             </div>
-          </div>
+          </main>
         </div>
       </section>
     </>

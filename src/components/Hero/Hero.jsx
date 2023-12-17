@@ -1,13 +1,19 @@
 import React from "react";
 import TypewriteComponent from "typewriter-effect";
+
+// imported CSS
 import "./hero.css";
+
+//icons
+import callIcon from "../../../public/assets/hero/call.gif";
+import downloadIcon from "../../../public/assets/hero/download.gif";
 
 const Hero = () => {
   return (
     <>
       <section className="hero_section" id="hero">
         <div className="hero_container">
-          <div className="hero_content">
+          <main className="hero_main">
             <div className="hero_social">
               <a
                 href="https://www.instagram.com/sonu_03.01/"
@@ -51,11 +57,15 @@ const Hero = () => {
               <div className="hero_buttons">
                 <a href="#contact" className="button contact">
                   Contact Me
-                  <i class="fas fa-address-card" />
+                  <img src={callIcon} alt="call" className="hero_icon" />
                 </a>
                 <a href="#contact" className="button cv">
                   Download CV
-                  <i class="fas fa-file-download" />
+                  <img
+                    src={downloadIcon}
+                    alt="download"
+                    className="hero_icon"
+                  />
                 </a>
               </div>
             </div>
@@ -63,7 +73,7 @@ const Hero = () => {
             <div className="hero_img">
               <img src="/assets/img2.png" alt="profile" />
             </div>
-          </div>
+          </main>
         </div>
         <div className="hero_tech_list">
           <marquee

@@ -1,17 +1,21 @@
 import React, { useState } from "react";
 import "./qualifications.css";
 
+//icons
+import eduIcon from "../../../public/assets/education.gif";
+import workIcon from "../../../public/assets/work.gif";
+
 const Qualifications = () => {
   const [showWork, setShowWork] = useState(false);
 
   return (
     <>
-      <section className="qualification">
-        <div className="qualification_container">
+      <section className="qualification" id="qualification">
+        <div className="container">
           <h2 className="section_title">Qualification</h2>
-          <span className="section_subtitle">My achievements</span>
+          <span className="section_subtitle">Achievements</span>
 
-          <div className="qualification_main">
+          <main className="qualification_main">
             <div className="qualification_tabs">
               <div
                 className={`qualification_button button-flex ${
@@ -19,7 +23,7 @@ const Qualifications = () => {
                 }`}
                 onClick={() => setShowWork(false)}
               >
-                <i className="fas fa-graduation-cap qualification_icon" />
+                <img src={eduIcon} alt="education" />
                 Education
               </div>
               <div
@@ -28,7 +32,7 @@ const Qualifications = () => {
                 }`}
                 onClick={() => setShowWork(true)}
               >
-                <i className="fas fa-suitcase qualification_icon" />
+                <img src={workIcon} alt="work" />
                 Work
               </div>
             </div>
@@ -212,7 +216,7 @@ const Qualifications = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </main>
         </div>
       </section>
     </>

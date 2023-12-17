@@ -16,16 +16,14 @@ function App() {
   return (
     <>
       <Header />
-      <div className="app_main">
-        <Hero />
-        <AboutMe />
-        <Qualifications />
-        <Works />
-        <Skills />
-        <Hobbies />
-        <Contact />
-        <Footer />
-      </div>
+      <Hero />
+      <AboutMe />
+      <Qualifications />
+      <Works />
+      <Skills />
+      <Hobbies />
+      <Contact />
+      <Footer />
     </>
   );
 }

@@ -1,12 +1,5 @@
 .qualification {
   background: #fff;
-  padding: 2rem 0;
-}
-
-.qualification_container {
-  /* transform: translateY(100px);
-  opacity: 0; */
-  transition: 0.8s;
 }
 
 .qualification_container[data-scroll="in"] {
@@ -25,10 +18,22 @@
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.qualification_button:hover {
+.qualification_button.active,
+.qualification_button:hover,
+.qualification_button.active img,
+.qualification_button:hover img {
   color: var(--first-color);
+  filter: grayscale(0);
+}
+
+.qualification_button img {
+  height: 40px;
+  filter: grayscale(1);
 }
 
 .qualification_icon {
@@ -103,10 +108,6 @@
 
 .qualification_content.show {
   height: max-content;
-}
-
-.qualification_button.active {
-  color: var(--first-color);
 }
 
 @media screen and (max-width: 767px) {

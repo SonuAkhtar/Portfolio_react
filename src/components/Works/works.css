@@ -1,14 +1,6 @@
 .works {
-  background: var(--section-background-color);
-  padding: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.works_container {
-  width: 100%;
-  max-width: 1024px;
+  background-color: #3d3d3d;
+  color: #f6f5fa;
 }
 
 .works_main {
@@ -24,23 +16,20 @@
   width: 250px;
   position: relative;
   background: var(--container-color);
+  color: #0c0910;
   padding: 2rem;
   border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.15);
   transition: all ease 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.work_card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
-}
-
 .work_card .name_n_icon i {
   display: block;
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: #0c0910;
   margin-bottom: var(--mb-1);
 }
 
@@ -59,13 +48,11 @@
 
 .works_button:hover .button_icon {
   transform: translateX(0.25rem);
+  transition: all 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 767px) {
-  .works {
-    padding: 2rem 1rem;
-  }
-
+/* Responsive design */
+@media screen and (max-width: 600px) {
   .works_main {
     justify-content: center;
     gap: 1.5rem;

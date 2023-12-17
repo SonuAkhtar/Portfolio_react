@@ -1,7 +1,5 @@
 .hobbies {
-  position: relative;
   background: #fff;
-  padding: 2rem 0;
 }
 
 .hobbies_card {
@@ -45,6 +43,11 @@
 .hobbies_button:hover .button_icon {
   transform: translateX(0.25rem);
   color: #fff;
+}
+
+.hobbies .grid {
+  display: grid;
+  gap: 1.5rem;
 }
 
 @media screen and (max-width: 767px) {

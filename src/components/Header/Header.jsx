@@ -10,6 +10,7 @@ import "./header.css";
 const Header = () => {
   const [menuClick, setMenuClick] = useState(false);
   const [headerScroll, setHeaderScroll] = useState(false);
+  const [burgerClick, setBurgerClick] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -22,12 +23,18 @@ const Header = () => {
       <header className={`header ${headerScroll && "scroll"}`}>
         <nav>
           <a className="nav_logo" href="#">
-            Sonu
+            Riyaz
           </a>
 
-          <div className="menu_icons" onClick={() => setMenuClick(!menuClick)}>
-            <i className={`fas fa-bars ${!menuClick && "show"}`} />
-            <i className={`fas fa-times ${menuClick && "show"}`} />
+          <div
+            className={`ham_wrapper ${menuClick && "active"}`}
+            onClick={() => setMenuClick(!menuClick)}
+          >
+            <div className="ham_icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
 
           <MenuMobile expand={menuClick} setExpand={setMenuClick} />

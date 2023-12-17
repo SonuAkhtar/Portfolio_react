@@ -1,35 +1,50 @@
 import React from "react";
+
+// imported CSS
 import "./contact.css";
+
+// icons
+import callIcon from "../../../public/assets/contact/call.gif";
+import emailIcon from "../../../public/assets/contact/message.gif";
+import locationIcon from "../../../public/assets/contact/location.gif";
 
 const Contact = () => {
   return (
     <>
       <section className="contact" id="contact">
-        <div className="contact_container">
+        <div className="container">
           <h2 className="section_title">Contact me</h2>
           <span className="section_subtitle">Get in touch</span>
 
-          <div className="contact_main">
+          <main className="contact_main">
             <div className="contact_info">
               <div className="contact_sub_info">
                 <div className="contact_icon_title">
-                  <i className="fas fa-phone" />
+                  <img src={callIcon} alt="call" className="contact_icon" />
                   <h3 className="contact_type">Call</h3>
                 </div>
-                <div className="contact_type_info">+91-9876543210</div>
+                <div className="contact_type_info">
+                  <a href="tel:+919876543210">+91-9876543210</a>
+                </div>
               </div>
 
               <div className="contact_sub_info">
                 <div className="contact_icon_title">
-                  <i className="fas fa-envelope" />
+                  <img src={emailIcon} alt="email" className="contact_icon" />
                   <h3 className="contact_type">Email</h3>
                 </div>
-                <div className="contact_type_info">+91-9876543210</div>
+                <div className="contact_type_info">
+                  <a href="mailto:sonua981@gmail.com">sonua981@gmail.com</a>
+                </div>
               </div>
 
               <div className="contact_sub_info">
                 <div className="contact_icon_title">
-                  <i className="fas fa-map-marker-alt" />
+                  <img
+                    src={locationIcon}
+                    alt="location"
+                    className="contact_icon"
+                  />
                   <h3 className="contact_type">Location</h3>
                 </div>
                 <div className="contact_type_info">Gurgaon - India</div>
@@ -38,8 +53,6 @@ const Contact = () => {
 
             <div className="contact_form">
               <form id="contact_form" autoComplete="off">
-                {/* <div id="error_msg"></div> */}
-
                 <div className="contact_inputs">
                   <div className="contact_name_email">
                     <div className="input_wrapper">
@@ -74,10 +87,7 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   <div className="contact_button">
-                    <button
-                      className="button button-flex"
-                      // onClick="return validate()"
-                    >
+                    <button className="button button-flex">
                       Send Message
                       <i className="fas fa-paper-plane button_icon"></i>
                     </button>
@@ -85,7 +95,7 @@ const Contact = () => {
                 </div>
               </form>
             </div>
-          </div>
+          </main>
         </div>
       </section>
     </>

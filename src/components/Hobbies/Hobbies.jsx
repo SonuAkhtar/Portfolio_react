@@ -11,11 +11,11 @@ const Hobbies = () => {
   return (
     <>
       <section className="hobbies" id="hobbies">
-        <div className="hobbies_container">
+        <div className="container">
           <h2 className="section_title">Hobbies</h2>
-          <span className="section_subtitle">My interesting side</span>
+          <span className="section_subtitle">Interesting side</span>
 
-          <div className="hobbies_main">
+          <main className="hobbies_main">
             <Swiper
               modules={[Navigation]}
               navigation
@@ -43,12 +43,12 @@ const Hobbies = () => {
                   href="https://www.instagram.com/just_about_clicks/"
                   className="button button-flex button-small"
                 >
-                  Visit Instagram{" "}
+                  Visit Instagram
                   <i className="fas fa-arrow-right button_icon" />
                 </a>
               </div>
             </Swiper>
-          </div>
+          </main>
         </div>
       </section>
     </>
