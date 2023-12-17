@@ -4,9 +4,12 @@ import React from "react";
 import "./contact.css";
 
 // icons
-import callIcon from "../../../public/assets/contact/call.gif";
-import emailIcon from "../../../public/assets/contact/message.gif";
-import locationIcon from "../../../public/assets/contact/location.gif";
+import callIcon from "/assets/contact/call.gif";
+import emailIcon from "/assets/contact/email.gif";
+import locationIcon from "/assets/contact/location.gif";
+import userIcon from "/assets/contact/user.gif";
+import userEmailIcon from "/assets/contact/user_email.gif";
+import messageIcon from "/assets/contact/message.gif";
 
 const Contact = () => {
   return (
@@ -56,7 +59,7 @@ const Contact = () => {
                 <div className="contact_inputs">
                   <div className="contact_name_email">
                     <div className="input_wrapper">
-                      <i className="fas fa-user-edit"></i>
+                      <img src={userIcon} alt="user" className="contact_icon" />
                       <input
                         type="text"
                         id="contact_name"
@@ -65,7 +68,11 @@ const Contact = () => {
                       />
                     </div>
                     <div className="input_wrapper">
-                      <i className="fas fa-at"></i>
+                      <img
+                        src={userEmailIcon}
+                        alt="user email"
+                        className="contact_icon"
+                      />
                       <input
                         type="email"
                         id="contact_email"
@@ -76,7 +83,11 @@ const Contact = () => {
                   </div>
 
                   <div className="textarea_wrapper">
-                    <i className="fas fa-envelope"></i>
+                    <img
+                      src={messageIcon}
+                      alt="user message"
+                      className="contact_icon"
+                    />
                     <textarea
                       name=""
                       id="contact_msg"
@@ -87,9 +98,9 @@ const Contact = () => {
                     ></textarea>
                   </div>
                   <div className="contact_button">
-                    <button className="button button-flex">
+                    <button>
                       Send Message
-                      <i className="fas fa-paper-plane button_icon"></i>
+                      <i className="fas fa-paper-plane" />
                     </button>
                   </div>
                 </div>

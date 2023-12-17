@@ -2,7 +2,7 @@
   position: relative;
   margin-top: 6vh;
   height: 70vh;
-  background: var(--section-background-color);
+  background: var(--off-white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,16 +26,15 @@
 }
 
 .hero_social a {
-  background-color: var(--section-background-color);
   display: flex;
   align-items: center;
   justify-content: center;
   height: 40px;
   width: 40px;
-  border: 1px solid var(--section-text-color);
+  border: 1px solid var(--off-dark);
   border-radius: 50%;
   font-size: 1rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .hero_social a:nth-child(1) {
@@ -61,7 +60,7 @@
 
 .hero_social a:hover {
   scale: 1.2;
-  color: var(--section-background-color);
+  color: var(--off-white);
 }
 
 .hero_title {
@@ -72,7 +71,7 @@
   display: flex;
   gap: 0.5rem;
   font-size: 1.5rem;
-  color: var(--section-text-color);
+  color: var(--off-dark);
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -91,11 +90,11 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  border: 1px solid var(--section-text-color);
+  border: 1px solid var(--off-dark);
   padding: 0.75rem 1rem;
   border-radius: 1rem;
   font-weight: 500;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .hero_buttons img {
@@ -104,29 +103,29 @@
 }
 
 .hero_buttons .button.contact {
-  background: var(--section-even-background-color);
-  color: var(--section-even-text-color);
+  background: var(--off-dark);
+  color: var(--off-white);
 }
 
 .hero_buttons .button.contact:hover {
-  background: var(--section-background-color);
-  color: var(--section-text-color);
+  background: var(--off-white);
+  color: var(--off-dark);
   border-radius: 2rem;
 }
 
 .hero_buttons .button.cv {
-  background: var(--section-background-color);
-  color: var(--section-text-color);
+  background: var(--off-white);
+  color: var(--off-dark);
 }
 
 .hero_buttons .button.cv:hover {
-  background: var(--section-even-background-color);
-  color: var(--section-even-text-color);
+  background: var(--off-dark);
+  color: var(--off-white);
   border-radius: 2rem;
 }
 
 .hero_buttons .button img {
-  border: 1px solid var(--section-text-color);
+  border: 1px solid var(--off-dark);
 }
 
 .hero_img {
@@ -151,8 +150,8 @@
   align-items: center;
   font-size: 6rem;
   font-weight: 700;
-  opacity: 0.2;
-  color: #acb0bd;
+  opacity: 0.075;
+  color: var(--off-dark);
 }
 
 .hero_tech_list span {
@@ -163,6 +162,7 @@
 @media screen and (max-width: 600px) {
   .hero_section {
     height: 80vh;
+    margin-top: 0;
     padding: 2rem 1rem;
   }
 

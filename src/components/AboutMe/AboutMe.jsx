@@ -3,17 +3,20 @@ import React from "react";
 // imported CSS
 import "./aboutMe.css";
 
+// import image
+import aboutImage from "/assets/about/about_pic.jpg";
+
 const AboutMe = () => {
   return (
     <>
-      <section className="about" id="about">
+      <section className="about even" id="about">
         <div className="container">
-          <h2 className="section_title">About Me</h2>
-          <span className="section_subtitle">Professionally</span>
+          <h2 className="section_title even">About Me</h2>
+          <span className="section_subtitle even">Professionally</span>
 
           <main className="about_main">
             <div className="about_img">
-              <img src="/assets/about_pic.jpg" alt="about" />
+              <img src={aboutImage} alt="about" />
             </div>
 
             <p className="about_description">

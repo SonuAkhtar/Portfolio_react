@@ -1,6 +1,13 @@
 import React, { useState } from "react";
+
+// imported Data
 import { skillsData } from "../../../appData";
+
+// imported CSS
 import "./skills.css";
+
+// imported icons
+import arrowIcon from "/assets/skills/arrow.gif";
 
 const Skills = () => {
   const [skillsList, setSkillsList] = useState(0);
@@ -21,9 +28,11 @@ const Skills = () => {
                     <h1 className="skills_title">{skill.title}</h1>
                     <span className="skills_subtitle">{skill.subtitle}</span>
                   </div>
-                  <i
-                    className={`fas fa-chevron-down skills_arrow ${
-                      skillsList === index ? "rotate" : ""
+                  <img
+                    src={arrowIcon}
+                    alt="arrow"
+                    className={`skills_arrow ${
+                      skillsList === index && "rotate"
                     }`}
                     onClick={() =>
                       setSkillsList((prev) =>

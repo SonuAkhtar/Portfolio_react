@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+
+// imported CSS
 import "./qualifications.css";
 
-//icons
-import eduIcon from "../../../public/assets/education.gif";
-import workIcon from "../../../public/assets/work.gif";
+// imported icons
+import eduIcon from "/assets/qualification/education.gif";
+import workIcon from "/assets/qualification/work.gif";
 
 const Qualifications = () => {
   const [showWork, setShowWork] = useState(false);
@@ -18,18 +20,14 @@ const Qualifications = () => {
           <main className="qualification_main">
             <div className="qualification_tabs">
               <div
-                className={`qualification_button button-flex ${
-                  !showWork && "active"
-                }`}
+                className={`qualification_button ${!showWork && "active"}`}
                 onClick={() => setShowWork(false)}
               >
                 <img src={eduIcon} alt="education" />
                 Education
               </div>
               <div
-                className={`qualification_button button-flex ${
-                  showWork && "active"
-                }`}
+                className={`qualification_button ${showWork && "active"}`}
                 onClick={() => setShowWork(true)}
               >
                 <img src={workIcon} alt="work" />

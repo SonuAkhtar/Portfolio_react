@@ -7,10 +7,10 @@ import { socialIconsData } from "../../../appData";
 // imported CSS
 import "./hero.css";
 
-//icons
-import callIcon from "../../../public/assets/hero/call.gif";
-import downloadIcon from "../../../public/assets/hero/download.gif";
-import heroImage from "../../../public/assets/hero/hero.png";
+// imported icons
+import callIcon from "/assets/hero/call.gif";
+import downloadIcon from "/assets/hero/download.gif";
+import heroImage from "/assets/hero/hero.png";
 
 const Hero = () => {
   return (

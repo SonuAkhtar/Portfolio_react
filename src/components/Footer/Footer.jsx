@@ -8,15 +8,21 @@ const Footer = () => {
         <div className="footer_container">
           <div className="footer_info">
             <h1 className="footer_title">Riyaz</h1>
-            <span className="footer_subtitle">Frontend Developer</span>
+            <span className="footer_subtitle">Software Developer</span>
           </div>
           <div className="footer_links">
             <ul>
               <li>
-                <a href="#services">Work</a>
+                <a href="#about">About</a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#works">Work</a>
+              </li>
+              <li>
+                <a href="#hobbies">Hobbies</a>
               </li>
               <li>
                 <a href="#contact">Contact</a>

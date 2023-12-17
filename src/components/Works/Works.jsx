@@ -4,7 +4,7 @@ import "./works.css";
 const Works = () => {
   return (
     <>
-      <section className="works" id="works">
+      <section className="works even" id="works">
         <div className="container">
           <h2 className="section_title">Work</h2>
           <span className="section_subtitle">What i do</span>

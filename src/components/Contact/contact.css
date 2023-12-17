@@ -1,7 +1,3 @@
-section.contact {
-  background: var(--section-background-color);
-}
-
 .contact_main {
   display: flex;
   justify-content: space-between;
@@ -20,7 +16,7 @@ section.contact {
   gap: 0.5rem;
 }
 
-.contact_icon_title img {
+.contact_main .contact_icon {
   height: 35px;
   mix-blend-mode: multiply;
 }
@@ -50,7 +46,6 @@ section.contact {
 
 .input_wrapper,
 .textarea_wrapper {
-  background: var(--input-color);
   border-radius: 0.5rem;
   padding: 0.75rem 1rem 0.25rem;
 }
@@ -58,29 +53,37 @@ section.contact {
 .input_wrapper i,
 .textarea_wrapper i {
   font-size: 1.2rem;
-  color: var(--first-color);
+  color: var(--off-dark);
 }
 
 .input_wrapper input,
 .textarea_wrapper textarea {
   width: 100%;
-  background: var(--input-color);
-  color: var(--text-color);
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
+  background: inherit;
+  color: var(--off-dark);
+  font-size: 0.9rem;
   border: none;
   outline: none;
-  padding: 0.25rme 0.5rem 0.5rem 0;
 }
 
 .contact_button button {
-  max-width: max-content;
-  transform: translate(0);
-  background-color: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  background: var(--off-dark);
+  color: var(--off-white);
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
 }
 
-.contact_button button:hover .button_icon {
-  color: #fff;
+.contact_button button:hover {
+  border-radius: 2rem;
 }
 
 #error_msg {
@@ -93,7 +96,8 @@ section.contact {
   border-radius: 0.5rem;
 }
 
-@media screen and (max-width: 767px) {
+/* Responsive design */
+@media screen and (max-width: 600px) {
   .contact {
     padding: 2rem 1rem;
   }
@@ -101,6 +105,14 @@ section.contact {
   .contact_main {
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .contact_info {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 0.8rem;
   }
 
   .contact_name_email {

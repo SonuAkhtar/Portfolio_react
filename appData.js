@@ -72,7 +72,7 @@ export const skillsData = [
     id: 0,
     icon: "fab fa-react",
     title: "Frontend Developer",
-    subtitle: "More than 3 years",
+    subtitle: "More than 6 years",
     data: [
       {
         id: 0,
@@ -186,37 +186,37 @@ export const skillsData = [
 export const hobbiesData = [
   {
     id: 0,
-    image: "/assets/image_1.jpg",
+    image: "/assets/hobbies/image_1.jpg",
     title: "Humayun's Tomb",
     desc: "Humayun's tomb is the tomb of the Mughal Emperor Humayun in Delhi, India.",
   },
   {
     id: 1,
-    image: "/assets/image_2.jpg",
+    image: "/assets/hobbies/image_2.jpg",
     title: "Palm Tree",
     desc: "Trying to get a different perspective.",
   },
   {
     id: 2,
-    image: "/assets/image_3.jpg",
+    image: "/assets/hobbies/image_3.jpg",
     title: "Flying Birds",
     desc: "Always try to see something different and new.",
   },
   {
     id: 3,
-    image: "/assets/image_4.jpg",
+    image: "/assets/hobbies/image_4.jpg",
     title: "Safdarjang's Tomb",
     desc: "It makes me wonder how beatifully this is crafted.",
   },
   {
     id: 4,
-    image: "/assets/image_5.jpg",
+    image: "/assets/hobbies/image_5.jpg",
     title: "Eyes on the book",
     desc: "Capture those moments which are unique.",
   },
   {
     id: 5,
-    image: "/assets/image_7.jpg",
+    image: "/assets/hobbies/image_7.jpg",
     title: "Flower in the woods",
     desc: "Standing all alone yet so calm.",
   },

@@ -1,53 +1,54 @@
-.works {
-  background-color: #3d3d3d;
-  color: #f6f5fa;
-}
-
 .works_main {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .work_card {
   height: 200px;
   width: 250px;
   position: relative;
-  background: var(--container-color);
-  color: #0c0910;
+  background: var(--off-white);
+  color: var(--off-dark);
+  font-weight: 500;
   padding: 2rem;
   border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.15);
-  transition: all ease 0.3s;
+  box-shadow: 0 0 5px var(--off-white);
+  transition: all ease 0.5s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.work_card:hover {
+  box-shadow: 0 0 15px var(--off-white);
+  scale: 1.05;
+}
+
 .work_card .name_n_icon i {
   display: block;
   font-size: 1.5rem;
-  color: #0c0910;
-  margin-bottom: var(--mb-1);
+  color: var(--off-dark);
+  margin-bottom: 1rem;
 }
 
 .works_title {
-  font-size: var(--h3-font-size);
+  font-size: 1rem;
   margin-bottom: var(--mb-1);
   font-weight: var(--font-medium);
 }
 
 .works_button {
   cursor: pointer;
-  font-size: var(--small-font-size);
+  font-size: 0.9rem;
   border: none;
   transform: translate(0);
 }
 
 .works_button:hover .button_icon {
-  transform: translateX(0.25rem);
+  transform: translateX(0.5rem);
   transition: all 0.5s ease-in-out;
 }
 

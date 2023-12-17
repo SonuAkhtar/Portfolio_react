@@ -4,12 +4,12 @@
   left: 0;
   width: 80vw;
   height: 100vh;
-  background: var(--section-background-color);
+  background: var(--off-white);
   transition: all 0.5s ease-in-out;
   transform: translateX(-120vw);
   overflow: hidden;
   z-index: 999;
-  box-shadow: 0 0 15px var(--section-text-color);
+  box-shadow: 0 0 15px var(--off-dark);
 }
 
 .menuDesk_container.show {
@@ -74,12 +74,11 @@
 .menuDesk_dot i {
   font-size: 1rem;
   transform: translateX(55%);
-  color: var(--section-text-color);
+  color: var(--off-dark);
   opacity: 0.3;
 }
 
 .menuDesk_dot i.active {
-  color: var(--section-text-color);
   opacity: 1;
 }
 
@@ -91,7 +90,7 @@
   align-items: center;
   gap: 1rem;
   cursor: pointer;
-  color: var(--section-text-color);
+  color: var(--off-dark);
   opacity: 0.3;
   transition: all 0.3s ease;
 }
