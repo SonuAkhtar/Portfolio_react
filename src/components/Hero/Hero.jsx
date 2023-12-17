@@ -7,31 +7,23 @@ import "./hero.css";
 //icons
 import callIcon from "../../../public/assets/hero/call.gif";
 import downloadIcon from "../../../public/assets/hero/download.gif";
+import heroImage from "../../../public/assets/hero/hero.png";
 
 const Hero = () => {
   return (
     <>
       <section className="hero_section" id="hero">
-        <div className="hero_container">
+        <div className="container">
           <main className="hero_main">
             <div className="hero_social">
-              <a
-                href="https://www.instagram.com/sonu_03.01/"
-                className="hero_social-icon"
-              >
-                <i className="fab fa-facebook-f"></i>
+              <a href="https://www.instagram.com/sonu_03.01/">
+                <i className="fab fa-facebook-f" />
               </a>
-              <a
-                href="https://www.linkedin.com/in/sonu-akhtar-03bb59129"
-                className="hero_social-icon"
-              >
-                <i className="fab fa-linkedin-in"></i>
+              <a href="https://www.linkedin.com/in/sonu-akhtar-03bb59129">
+                <i className="fab fa-linkedin-in" />
               </a>
-              <a
-                href="https://twitter.com/sonuakhtar5"
-                className="hero_social-icon"
-              >
-                <i className="fab fa-twitter"></i>
+              <a href="https://twitter.com/sonuakhtar5">
+                <i className="fab fa-twitter" />
               </a>
             </div>
             <div className="hero_data">
@@ -57,21 +49,17 @@ const Hero = () => {
               <div className="hero_buttons">
                 <a href="#contact" className="button contact">
                   Contact Me
-                  <img src={callIcon} alt="call" className="hero_icon" />
+                  <img src={callIcon} alt="call" />
                 </a>
                 <a href="#contact" className="button cv">
                   Download CV
-                  <img
-                    src={downloadIcon}
-                    alt="download"
-                    className="hero_icon"
-                  />
+                  <img src={downloadIcon} alt="download" />
                 </a>
               </div>
             </div>
 
             <div className="hero_img">
-              <img src="/assets/img2.png" alt="profile" />
+              <img src={heroImage} alt="hero-img" />
             </div>
           </main>
         </div>
