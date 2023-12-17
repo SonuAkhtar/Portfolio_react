@@ -2,13 +2,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 80vw;
   height: 100vh;
-  background-color: white;
+  background: var(--section-background-color);
   transition: all 0.5s ease-in-out;
   transform: translateX(-120vw);
   overflow: hidden;
   z-index: 999;
+  box-shadow: 0 0 15px var(--section-text-color);
 }
 
 .menuDesk_container.show {
@@ -73,10 +74,13 @@
 .menuDesk_dot i {
   font-size: 1rem;
   transform: translateX(55%);
+  color: var(--section-text-color);
+  opacity: 0.3;
 }
 
 .menuDesk_dot i.active {
-  color: #0c0910;
+  color: var(--section-text-color);
+  opacity: 1;
 }
 
 .menuDesk_text {
@@ -87,16 +91,14 @@
   align-items: center;
   gap: 1rem;
   cursor: pointer;
-  color: #acb0bd;
+  color: var(--section-text-color);
+  opacity: 0.3;
   transition: all 0.3s ease;
 }
 
-.menuDesk_text:hover {
-  color: #0c0910;
-}
-
+.menuDesk_text:hover,
 .menuDesk_text.active {
-  color: #0c0910;
+  opacity: 1;
 }
 
 .menuDesk_text .number {

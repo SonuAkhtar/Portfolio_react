@@ -11,7 +11,7 @@
     position: fixed;
     bottom: 3rem;
     left: 0;
-    background: var(--body-color);
+    background: var(--section-background-color);
     width: 100%;
     height: max-content;
     padding: 3rem 1rem;
@@ -52,20 +52,23 @@
   .menuMobile_container a span {
     font-size: 1.25rem;
     font-weight: 500;
-    color: #0c0910;
-    opacity: 0.3;
+    color: var(--section-text-color);
+    opacity: 0.6;
   }
 
   .menuMobile_container a i {
     font-size: 2.75rem;
-    color: #acb0bd;
-    opacity: 0.2;
+    color: var(--section-text-color);
+    opacity: 0.15;
   }
 
-  .menuMobile_container ul a.active span,
-  .menuMobile_container ul a.active i {
+  .menuMobile_container ul a.active span {
     opacity: 1;
     letter-spacing: 4px;
     font-weight: 600;
+  }
+
+  .menuMobile_container ul a.active i {
+    opacity: 0.4;
   }
 }
