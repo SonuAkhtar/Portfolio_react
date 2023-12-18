@@ -51,7 +51,11 @@ const Hero = () => {
                   Contact Me
                   <img src={callIcon} alt="call" />
                 </a>
-                <a href="#contact" className="button cv">
+                <a
+                  href="/assets/Riyaz_Akhtar_Resume.pdf"
+                  download
+                  className="button cv"
+                >
                   Download CV
                   <img src={downloadIcon} alt="download" />
                 </a>
