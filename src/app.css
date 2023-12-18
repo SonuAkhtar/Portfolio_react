@@ -41,7 +41,7 @@ a {
 
 /* Section Styles*/
 section {
-  padding: 2rem 1rem 4rem 1rem;
+  padding: 3rem 1rem 4rem 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,6 +87,10 @@ section.even {
 
 /* Responsive design */
 @media screen and (max-width: 600px) {
+  section {
+    padding-top: 2rem;
+  }
+
   .section_title {
     font-size: 1.25rem;
     margin-bottom: 2rem;

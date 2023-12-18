@@ -78,6 +78,10 @@ section.hobbies {
 
 /* Responsive design */
 @media screen and (max-width: 600px) {
+  .hobbies .section_subtitle {
+    font-size: 2rem;
+  }
+
   .hobbies_card {
     padding: 0 0.5rem;
   }

@@ -67,7 +67,7 @@
   }
 
   .about_info {
-    justify-content: center;
+    gap: 0.5rem;
   }
 
   .about_info_number {
