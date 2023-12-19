@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+
+// imported Data
+import { worksData } from "../../../appData";
+
+// imported Component
+import WorkModal from "../WorkModal/WorkModal";
+
+// imported CSS
 import "./works.css";
 
 const Works = () => {
+  const [openModal, setOpenModal] = useState(false);
+  const [modalData, setModalData] = useState({});
+
+  const handleViewClick = (data) => {
+    setOpenModal(true);
+    setModalData(data);
+  };
+
   return (
     <>
       <section className="works even" id="works">
@@ -10,40 +26,31 @@ const Works = () => {
           <span className="section_subtitle">What i do</span>
 
           <main className="works_main">
-            <div className="work_card">
-              <div className="name_n_icon">
-                <i className="fas fa-th-large"></i>
-                <span className="works_title">UI/UX Design</span>
+            {worksData.map((data, i) => (
+              <div key={i} className="work_card">
+                <div className="name_n_icon">
+                  <i className={data.icon} />
+                  <span className="works_title">{data.name}</span>
+                </div>
+
+                <span
+                  className="button button-flex button-small button-link works_button"
+                  onClick={() => handleViewClick(data)}
+                >
+                  View More
+                  <i className="fas fa-arrow-right button_icon" />
+                </span>
               </div>
-
-              <span className="button button-flex button-small button-link works_button">
-                View More <i className="fas fa-arrow-right button_icon"></i>
-              </span>
-            </div>
-
-            <div className="work_card">
-              <div className="name_n_icon">
-                <i className="fas fa-laptop-code"></i>
-                <span className="works_title">Frontend Developer</span>
-              </div>
-
-              <span className="button button-flex button-small button-link works_button">
-                View More <i className="fas fa-arrow-right button_icon"></i>
-              </span>
-            </div>
-
-            <div className="work_card">
-              <div className="name_n_icon">
-                <i className="fas fa-pen"></i>
-                <span className="works_title">Logo Designer</span>
-              </div>
-
-              <span className="button button-flex button-small button-link works_button">
-                View More <i className="fas fa-arrow-right button_icon"></i>
-              </span>
-            </div>
+            ))}
           </main>
         </div>
+
+        {/* works modal */}
+        <WorkModal
+          openModal={openModal}
+          setOpenModal={setOpenModal}
+          modalData={modalData}
+        />
       </section>
     </>
   );

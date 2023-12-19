@@ -1,4 +1,9 @@
 import React from "react";
+
+// imported Data
+import { socialIconsData } from "../../../appData";
+
+// imported CSS
 import "./footer.css";
 
 const Footer = () => {
@@ -31,18 +36,11 @@ const Footer = () => {
           </div>
 
           <div className="footer_social">
-            <a href="https://www.instagram.com/sonu_03.01/" target="_blank">
-              <i className="fab fa-facebook-f" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/sonu-akhtar-03bb59129"
-              target="_blank"
-            >
-              <i className="fab fa-linkedin-in" />
-            </a>
-            <a href="https://twitter.com/sonuakhtar5" target="_blank">
-              <i className="fab fa-twitter" />
-            </a>
+            {socialIconsData.map((item, i) => (
+              <a key={i} href={item.href}>
+                <i className={item.class} />
+              </a>
+            ))}
           </div>
         </div>
       </footer>

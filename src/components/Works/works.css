@@ -28,35 +28,37 @@
 }
 
 .work_card .name_n_icon i {
-  display: block;
-  font-size: 1.5rem;
+  width: 100%;
+  font-size: 2rem;
   color: var(--off-dark);
   margin-bottom: 1rem;
 }
 
 .works_title {
   font-size: 1rem;
-  margin-bottom: var(--mb-1);
-  font-weight: var(--font-medium);
+  margin-bottom: 1rem;
+  font-weight: 600;
 }
 
 .works_button {
-  cursor: pointer;
   font-size: 0.9rem;
   border: none;
-  transform: translate(0);
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
 }
 
-.works_button:hover .button_icon {
-  transform: translateX(0.5rem);
-  transition: all 0.5s ease-in-out;
+.works_button:hover {
+  gap: 0.75rem;
 }
 
 /* Responsive design */
 @media screen and (max-width: 600px) {
   .works_main {
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   .work_card {
@@ -70,6 +72,12 @@
   .work_card .name_n_icon {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 0.5rem;
+  }
+
+  .work_card .name_n_icon i {
+    font-size: 1.5rem;
+    width: max-content;
   }
 }

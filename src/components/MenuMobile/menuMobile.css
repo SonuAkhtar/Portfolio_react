@@ -52,13 +52,13 @@
   .menuMobile_container a span {
     font-size: 1.25rem;
     font-weight: 500;
-    color: var(--section-text-color);
+    color: var(--off-white);
     opacity: 0.6;
   }
 
   .menuMobile_container a i {
     font-size: 2.75rem;
-    color: var(--section-text-color);
+    color: var(--off-white);
     opacity: 0.15;
   }
 

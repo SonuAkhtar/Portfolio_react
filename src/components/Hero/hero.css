@@ -38,10 +38,10 @@
 }
 
 .hero_social a:nth-child(1) {
-  color: #4267b2;
+  color: #000000;
 }
 .hero_social a:nth-child(1):hover {
-  background-color: #4267b2;
+  background-color: #000000;
 }
 
 .hero_social a:nth-child(2) {

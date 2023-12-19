@@ -1,15 +1,15 @@
 export const socialIconsData = [
   {
     id: 0,
-    class: "fab fa-facebook-f",
-    href: "https://www.instagram.com/sonu_03.01/",
+    class: "fab fa-github",
+    href: "https://github.com/SonuAkhtar",
   },
   {
     id: 1,
     class: "fab fa-linkedin-in",
-    href: "https://www.linkedin.com/in/sonu-akhtar-03bb59129",
+    href: "https://www.linkedin.com/in/riyaz-akhtar-03bb59129",
   },
-  { id: 2, class: "fab fa-twitter", href: "https://twitter.com/sonuakhtar5" },
+  { id: 2, class: "fab fa-twitter", href: "https://twitter.com/SonuA007" },
 ];
 
 export const menuDeskData = [
@@ -64,6 +64,49 @@ export const menuMobileData = [
     icon: "fas fa-phone",
     name: "Contact",
     href: "#contact",
+  },
+];
+
+export const worksData = [
+  {
+    id: 0,
+    icon: "fab fa-react",
+    name: "Frontend Developer",
+    features: [
+      "I develop interactive UI/UX.",
+      "I develope Websites.",
+      "I position the user interaction wisely.",
+    ],
+  },
+  {
+    id: 1,
+    icon: "fab fa-node",
+    name: "Backend Developer",
+    features: [
+      "I design high quality User Interface",
+      "I design UX element Interactions",
+      "I design website animations",
+    ],
+  },
+  {
+    id: 2,
+    icon: "fas fa-th-large",
+    name: "UI/UX Designer",
+    features: [
+      "I design high quality User Interface",
+      "I design UX element Interactions",
+      "I design website animations",
+    ],
+  },
+  {
+    id: 3,
+    icon: "fas fa-pen",
+    name: "Logo Designer",
+    features: [
+      "I create high quality Logo.",
+      "I make your brand name interactive.",
+      "I create trendy & animated logos.",
+    ],
   },
 ];
 
