@@ -70,6 +70,10 @@
     gap: 0.5rem;
   }
 
+  .about_info_card {
+    min-width: 150px;
+  }
+
   .about_info_number {
     font-size: 2rem;
   }

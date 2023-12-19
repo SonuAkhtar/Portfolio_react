@@ -12,9 +12,12 @@ const Footer = () => {
       <footer className="footer">
         <div className="footer_container">
           <div className="footer_info">
-            <h1 className="footer_title">Riyaz</h1>
+            <a href="#">
+              <h1 className="footer_title">Riyaz</h1>
+            </a>
             <span className="footer_subtitle">Software Developer</span>
           </div>
+
           <div className="footer_links">
             <ul>
               <li>
@@ -25,6 +28,9 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#works">Work</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
               </li>
               <li>
                 <a href="#hobbies">Hobbies</a>

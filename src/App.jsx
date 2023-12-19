@@ -11,6 +11,7 @@ import Footer from "./components/Footer/Footer";
 
 // Imported CSS
 import "./app.css";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Qualifications />
       <Works />
       <Skills />
+      <Projects />
       <Hobbies />
       <Contact />
       <Footer />

@@ -29,26 +29,30 @@
 }
 
 .menuDesk_circle.one {
-  rotate: 30deg;
+  rotate: 45deg;
 }
 
 .menuDesk_circle.two {
-  rotate: 15deg;
+  rotate: 30deg;
 }
 
 .menuDesk_circle.three {
-  rotate: 0deg;
+  rotate: 15deg;
 }
 
 .menuDesk_circle.four {
-  rotate: -15deg;
+  rotate: 0deg;
 }
 
 .menuDesk_circle.five {
-  rotate: -30deg;
+  rotate: -15deg;
 }
 
 .menuDesk_circle.six {
+  rotate: -30deg;
+}
+
+.menuDesk_circle.seven {
   rotate: -45deg;
 }
 
@@ -110,26 +114,30 @@
 }
 
 .menuDesk_stripe.one {
-  transform: translate(0, -50%) rotate(-30deg);
+  transform: translate(0, -50%) rotate(-45deg);
 }
 
 .menuDesk_stripe.two {
-  transform: translate(0, -50%) rotate(-15deg);
+  transform: translate(0, -50%) rotate(-30deg);
 }
 
 .menuDesk_stripe.three {
-  transform: translate(0, -50%) rotate(0deg);
+  transform: translate(0, -50%) rotate(-15deg);
 }
 
 .menuDesk_stripe.four {
-  transform: translate(0, -50%) rotate(15deg);
+  transform: translate(0, -50%) rotate(0deg);
 }
 
 .menuDesk_stripe.five {
-  transform: translate(0, -50%) rotate(30deg);
+  transform: translate(0, -50%) rotate(15deg);
 }
 
 .menuDesk_stripe.six {
+  transform: translate(0, -50%) rotate(30deg);
+}
+
+.menuDesk_stripe.seven {
   transform: translate(0, -50%) rotate(45deg);
 }
 

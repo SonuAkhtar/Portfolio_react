@@ -16,10 +16,10 @@ import "./hobbies.css";
 const Hobbies = () => {
   return (
     <>
-      <section className="hobbies even" id="hobbies">
+      <section className="hobbies" id="hobbies">
         <div className="container">
           <h2 className="section_title">Hobbies</h2>
-          <span className="section_subtitle">Interesting Side</span>
+          <span className="section_subtitle">Interests</span>
 
           <main className="hobbies_main">
             <Swiper

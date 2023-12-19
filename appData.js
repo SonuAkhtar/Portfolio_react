@@ -15,10 +15,11 @@ export const socialIconsData = [
 export const menuDeskData = [
   { id: 0, class: "one", number: "01", name: "About", href: "#about" },
   { id: 1, class: "two", number: "02", name: "Skills", href: "#skills" },
-  { id: 2, class: "three", number: "03", name: "Hero", href: "#" },
-  { id: 3, class: "four", number: "04", name: "Work", href: "#work" },
-  { id: 4, class: "five", number: "05", name: "Hobbies", href: "#hobbies" },
-  { id: 5, class: "six", number: "06", name: "Contact", href: "#contact" },
+  { id: 2, class: "three", number: "03", name: "Work", href: "#work" },
+  { id: 3, class: "four", number: "04", name: "Hero", href: "#" },
+  { id: 4, class: "five", number: "05", name: "Projects", href: "#projects" },
+  { id: 5, class: "six", number: "06", name: "Hobbies", href: "#hobbies" },
+  { id: 6, class: "seven", number: "07", name: "Contact", href: "#contact" },
 ];
 
 export const menuMobileData = [
@@ -43,7 +44,6 @@ export const menuMobileData = [
     name: "Skills",
     href: "#skills",
   },
-
   {
     id: 3,
     class: "four",
@@ -54,13 +54,20 @@ export const menuMobileData = [
   {
     id: 4,
     class: "five",
+    icon: "fas fa-project-diagram",
+    name: "Projects",
+    href: "#projects",
+  },
+  {
+    id: 5,
+    class: "six",
     icon: "fas fa-camera",
     name: "Hobbies",
     href: "#hobbies",
   },
   {
-    id: 5,
-    class: "six",
+    id: 6,
+    class: "seven",
     icon: "fas fa-phone",
     name: "Contact",
     href: "#contact",
@@ -121,43 +128,43 @@ export const skillsData = [
         id: 0,
         icon: "fab fa-react",
         name: "ReactJS",
-        number: "90%",
+        number: "80",
       },
       {
         id: 1,
         icon: "fab fa-react",
         name: "NextJS",
-        number: "90%",
+        number: "65",
       },
       {
         id: 2,
         icon: "fab fa-js",
         name: "JavaScript",
-        number: "90%",
+        number: "85",
       },
       {
         id: 3,
         icon: "fab fa-html5",
         name: "HTML",
-        number: "90%",
+        number: "90",
       },
       {
         id: 4,
         icon: "fab fa-css3-alt",
         name: "CSS",
-        number: "85%",
+        number: "90",
       },
       {
         id: 5,
         icon: "fab fa-react",
         name: "Tailwind",
-        number: "80%",
+        number: "70",
       },
       {
         id: 6,
         icon: "fab fa-bootstrap",
         name: "BootStrap",
-        number: "80%",
+        number: "65",
       },
     ],
   },
@@ -171,27 +178,27 @@ export const skillsData = [
       {
         id: 0,
         name: "NodeJS",
-        number: "90%",
+        number: "55",
       },
       {
         id: 1,
         name: "ExpressJS",
-        number: "85%",
+        number: "45",
       },
       {
         id: 2,
         name: "MongoDB",
-        number: "85%",
+        number: "60",
       },
       {
         id: 3,
         name: "Python",
-        number: "80%",
+        number: "50",
       },
       {
         id: 4,
         name: "VBA",
-        number: "80%",
+        number: "70",
       },
     ],
   },
@@ -205,22 +212,22 @@ export const skillsData = [
       {
         id: 0,
         name: "Figma",
-        number: "90%",
+        number: "60",
       },
       {
         id: 1,
         name: "Canva",
-        number: "85%",
+        number: "65",
       },
       {
         id: 2,
         name: "Photoshop",
-        number: "80%",
+        number: "50",
       },
       {
         id: 3,
         name: "Illustrator",
-        number: "80%",
+        number: "60",
       },
     ],
   },
@@ -262,5 +269,39 @@ export const hobbiesData = [
     image: "/assets/hobbies/image_7.jpg",
     title: "Flower in the woods",
     desc: "Standing all alone yet so calm.",
+  },
+];
+
+export const contactData = [
+  {
+    id: 0,
+    icon: "/assets/contact/call.gif",
+    name: "Call",
+    info: "+91-7009003062",
+    href: "tel:+917009003062",
+    alt: "call",
+  },
+  {
+    id: 1,
+    icon: "/assets/contact/email.gif",
+    name: "Email",
+    info: "sonua981@gmail.com",
+    href: "mailto:sonua981@gmail.com",
+    alt: "email",
+  },
+  {
+    id: 2,
+    icon: "/assets/contact/location.gif",
+    name: "Location",
+    info: "Gurgaon - India",
+    alt: "location",
+  },
+  {
+    id: 3,
+    icon: "/assets/contact/telephone.gif",
+    name: "Telephone",
+    info: "+91-01810 112233",
+    href: "tel:+9101810112233",
+    alt: "telephone",
   },
 ];

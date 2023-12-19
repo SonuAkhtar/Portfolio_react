@@ -1,6 +1,5 @@
 .hero_section {
   position: relative;
-  margin-top: 6vh;
   height: 70vh;
   background: var(--off-white);
   display: flex;

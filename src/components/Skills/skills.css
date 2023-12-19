@@ -82,48 +82,7 @@ img.skills_arrow {
 .skills_percentage {
   display: block;
   background: var(--off-dark);
-}
-/*one*/
-.skills_html {
-  width: 90%;
-}
-
-.skills_css {
-  width: 85%;
-}
-
-.skills_js {
-  width: 80%;
-}
-
-.skills_bootstrap {
-  width: 80%;
-}
-
-/*two*/
-.skills_node {
-  width: 40%;
-}
-
-.skills_firebase {
-  width: 50%;
-}
-
-.skills_python {
-  width: 60%;
-}
-
-/*three*/
-.skills_figma {
-  width: 80%;
-}
-
-.skills_canva {
-  width: 70%;
-}
-
-.skills_photoshop {
-  width: 50%;
+  transition: all 0.5s ease;
 }
 
 .skills_arrow.rotate {

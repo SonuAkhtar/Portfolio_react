@@ -14,8 +14,8 @@ const Qualifications = () => {
     <>
       <section className="qualification" id="qualification">
         <div className="container">
-          <h2 className="section_title">Qualification</h2>
-          <span className="section_subtitle">Achievements</span>
+          <h2 className="section_title">Academics</h2>
+          <span className="section_subtitle">Qualification</span>
 
           <main className="qualification_main">
             <div className="qualification_tabs">

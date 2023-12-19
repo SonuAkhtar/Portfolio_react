@@ -17,7 +17,7 @@ const Skills = () => {
       <section className="skills" id="skills">
         <div className="container">
           <h2 className="section_title">Skills</h2>
-          <span className="section_subtitle">Technically</span>
+          <span className="section_subtitle">Technical</span>
 
           <main className="skills_main">
             {skillsData.map((skill, index) => (
@@ -50,10 +50,13 @@ const Skills = () => {
                     <div key={item.id} className="skills_data">
                       <div className="skills_titles">
                         <h3 className="skills_name">{item.name}</h3>
-                        <span className="skills_number">{item.number}</span>
+                        <span className="skills_number">{item.number}%</span>
                       </div>
                       <div className="skills_bar">
-                        <span className="skills_percentage skills_html"></span>
+                        <span
+                          className="skills_percentage"
+                          style={{ width: `${item.number}%` }}
+                        ></span>
                       </div>
                     </div>
                   ))}

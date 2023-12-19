@@ -16,7 +16,7 @@
     height: max-content;
     padding: 3rem 1rem;
     border-radius: 2rem 2rem 0 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px var(--off-white);
     transform: translateY(50vh);
     transition: all 0.5s ease;
     z-index: 1;
@@ -31,7 +31,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
-    row-gap: 5rem;
+    row-gap: 3.5rem;
   }
 
   .menuMobile_container ul a {
@@ -50,14 +50,14 @@
   }
 
   .menuMobile_container a span {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: var(--off-white);
     opacity: 0.6;
   }
 
   .menuMobile_container a i {
-    font-size: 2.75rem;
+    font-size: 2.25rem;
     color: var(--off-white);
     opacity: 0.15;
   }

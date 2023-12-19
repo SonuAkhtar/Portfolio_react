@@ -27,7 +27,7 @@ section.hobbies {
 
 .swiper-button-prev,
 .swiper-button-next {
-  color: var(--off-white);
+  color: var(--off-dark);
   scale: 0.75;
 }
 
@@ -55,8 +55,8 @@ section.hobbies {
   align-items: center;
   justify-content: center;
   gap: 0.25rem;
-  background: var(--off-white);
-  color: var(--off-dark);
+  background-color: var(--off-dark);
+  color: var(--off-white);
   padding: 0.75rem 1rem;
   border-radius: 1rem;
   font-weight: 500;

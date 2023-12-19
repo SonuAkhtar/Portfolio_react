@@ -1,5 +1,8 @@
 import React from "react";
 
+// imported Data
+import { contactData } from "../../../appData";
+
 // imported CSS
 import "./contact.css";
 
@@ -21,45 +24,27 @@ const Contact = () => {
 
           <main className="contact_main">
             <div className="contact_info">
-              <div className="contact_sub_info">
-                <div className="contact_icon_title">
-                  <img src={callIcon} alt="call" className="contact_icon" />
-                  <h3 className="contact_type">Call</h3>
+              {contactData.map((data, i) => (
+                <div key={i} className="contact_sub_info">
+                  <div className="contact_info_title">
+                    <img src={data.icon} alt={data.alt} />
+                    <h3>{data.name}</h3>
+                  </div>
+                  {data.href ? (
+                    <a href={data.href}>{data.info}</a>
+                  ) : (
+                    <span>{data.info}</span>
+                  )}
                 </div>
-                <div className="contact_type_info">
-                  <a href="tel:+919876543210">+91-9876543210</a>
-                </div>
-              </div>
-
-              <div className="contact_sub_info">
-                <div className="contact_icon_title">
-                  <img src={emailIcon} alt="email" className="contact_icon" />
-                  <h3 className="contact_type">Email</h3>
-                </div>
-                <div className="contact_type_info">
-                  <a href="mailto:sonua981@gmail.com">sonua981@gmail.com</a>
-                </div>
-              </div>
-
-              <div className="contact_sub_info">
-                <div className="contact_icon_title">
-                  <img
-                    src={locationIcon}
-                    alt="location"
-                    className="contact_icon"
-                  />
-                  <h3 className="contact_type">Location</h3>
-                </div>
-                <div className="contact_type_info">Gurgaon - India</div>
-              </div>
+              ))}
             </div>
 
-            <div className="contact_form">
+            {/* <div className="contact_form">
               <form id="contact_form" autoComplete="off">
                 <div className="contact_inputs">
                   <div className="contact_name_email">
                     <div className="input_wrapper">
-                      <img src={userIcon} alt="user" className="contact_icon" />
+                      <img src={userIcon} alt="user" />
                       <input
                         type="text"
                         id="contact_name"
@@ -68,11 +53,7 @@ const Contact = () => {
                       />
                     </div>
                     <div className="input_wrapper">
-                      <img
-                        src={userEmailIcon}
-                        alt="user email"
-                        className="contact_icon"
-                      />
+                      <img src={userEmailIcon} alt="user email" />
                       <input
                         type="email"
                         id="contact_email"
@@ -83,11 +64,7 @@ const Contact = () => {
                   </div>
 
                   <div className="textarea_wrapper">
-                    <img
-                      src={messageIcon}
-                      alt="user message"
-                      className="contact_icon"
-                    />
+                    <img src={messageIcon} alt="user message" />
                     <textarea
                       name=""
                       id="contact_msg"
@@ -105,7 +82,7 @@ const Contact = () => {
                   </div>
                 </div>
               </form>
-            </div>
+            </div> */}
           </main>
         </div>
       </section>
