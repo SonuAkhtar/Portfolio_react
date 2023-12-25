@@ -15,7 +15,7 @@ export const socialIconsData = [
 export const menuDeskData = [
   { id: 0, class: "one", number: "01", name: "About", href: "#about" },
   { id: 1, class: "two", number: "02", name: "Skills", href: "#skills" },
-  { id: 2, class: "three", number: "03", name: "Work", href: "#work" },
+  { id: 2, class: "three", number: "03", name: "Work", href: "#works" },
   { id: 3, class: "four", number: "04", name: "Hero", href: "#" },
   { id: 4, class: "five", number: "05", name: "Projects", href: "#projects" },
   { id: 5, class: "six", number: "06", name: "Hobbies", href: "#hobbies" },
