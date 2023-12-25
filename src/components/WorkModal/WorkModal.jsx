@@ -4,7 +4,6 @@ import "./workModal.css";
 const WorkModal = ({ openModal, setOpenModal, modalData }) => {
   return (
     <>
-      {console.log(modalData)}
       <div className={`worksModal ${openModal && "show"}`}>
         <div className="worksModal_wrapper">
           <div className="worksModal_header">
