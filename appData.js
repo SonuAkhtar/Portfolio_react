@@ -80,9 +80,10 @@ export const worksData = [
     icon: "fab fa-react",
     name: "Frontend Developer",
     features: [
-      "I develop interactive UI/UX.",
-      "I develope Websites.",
-      "I position the user interaction wisely.",
+      "I Develop interactive UI Landing pages.",
+      "I Develop high peforming Web Apps.",
+      "I Design & Develop website animations",
+      "I Create responsive and attractive layouts",
     ],
   },
   {
@@ -90,9 +91,9 @@ export const worksData = [
     icon: "fab fa-node",
     name: "Backend Developer",
     features: [
-      "I design high quality User Interface",
-      "I design UX element Interactions",
-      "I design website animations",
+      "I Code efficient backend codes",
+      "I Create Rest API's for web apps",
+      "I Create connection of apps with Database",
     ],
   },
   {
@@ -110,8 +111,8 @@ export const worksData = [
     icon: "fas fa-pen",
     name: "Logo Designer",
     features: [
-      "I create high quality Logo.",
-      "I make your brand name interactive.",
+      "I create high quality branding.",
+      "I make interactive layouts.",
       "I create trendy & animated logos.",
     ],
   },
@@ -208,11 +209,17 @@ export const skillsData = [
       {
         id: 5,
         icon: "fab fa-react",
-        name: "Tailwind",
+        name: "Redux",
         number: "70",
       },
       {
         id: 6,
+        icon: "fab fa-react",
+        name: "Tailwind",
+        number: "70",
+      },
+      {
+        id: 7,
         icon: "fab fa-bootstrap",
         name: "BootStrap",
         number: "65",
@@ -243,11 +250,16 @@ export const skillsData = [
       },
       {
         id: 3,
+        name: "SQL",
+        number: "70",
+      },
+      {
+        id: 4,
         name: "Python",
         number: "50",
       },
       {
-        id: 4,
+        id: 5,
         name: "VBA",
         number: "70",
       },
